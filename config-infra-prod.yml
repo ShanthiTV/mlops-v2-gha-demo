@@ -8,7 +8,7 @@ variables:
   ap_vm_image: ubuntu-20.04
 
   namespace: mlopslite98 #Note: A namespace with many characters will cause storage account creation to fail due to storage account names having a limit of 24 characters.
-  postfix: a
+  postfix: b
   location: eastus
 
   environment: prod
@@ -35,6 +35,6 @@ variables:
   terraform_workingdir: infrastructure
   terraform_st_resource_group: rg-$(namespace)-$(postfix)$(environment)-tf
   terraform_st_location: $(location)
-  terraform_st_storage_account: azuremlws6937724460
+  terraform_st_storage_account: azuremlws6937724461
   terraform_st_container_name: default
   terraform_st_key: mlops-tab
